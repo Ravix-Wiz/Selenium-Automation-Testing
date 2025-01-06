@@ -13,9 +13,27 @@ public class demo_2 {
         WebDriver mydriver = new EdgeDriver();
         mydriver.get("https://practicetestautomation.com/practice-test-login/");
 
+
         WebElement username = mydriver.findElement(By.id("username"));
+        //xpath
+        WebElement username_xpath = mydriver.findElement(By.xpath("//input[@id='username']"));
+        //css selectors
+        WebElement username_cssS = mydriver.findElement(By.cssSelector("input[id='username']"));
+
+
+
         WebElement password = mydriver.findElement(By.name("password"));
+        //xpath
+        WebElement password_xpath = mydriver.findElement(By.xpath("//input[@name='password']"));
+        //css selectors
+        WebElement password_cssS = mydriver.findElement(By.cssSelector("input[name='password']"));
+
+
         WebElement submitButton = mydriver.findElement(By.className("btn"));
+        //xpath
+        WebElement submitButton_xpath = mydriver.findElement(By.xpath("//button[@id ='submit']"));
+        //css selectors
+        WebElement submitButton_cssS = mydriver.findElement(By.cssSelector("button[id='submit']"));
 
         List<WebElement> inputFields = mydriver.findElements(By.tagName("input"));
 
@@ -28,8 +46,11 @@ public class demo_2 {
         WebElement privacypolicyLink = mydriver.findElement(RelativeLocator.with(By.tagName("a")).toRightOf(By.linkText("Practice Test Automation.")));
 
 
+        WebElement homeButton = mydriver.findElement(By.className("menu-item-home"));
         mydriver.quit();
 
 
     }
 }
+
+//Force Update on file demo2
