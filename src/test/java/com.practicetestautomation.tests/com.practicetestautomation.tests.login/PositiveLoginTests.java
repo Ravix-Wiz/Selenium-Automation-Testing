@@ -5,9 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class PositiveLoginTests {
-
+    @Test
     public void testLoginFunctionality(){
 
         System.setProperty("webdriver.edge.driver","C://edgedriver/msedgedriver.exe");
@@ -27,6 +28,13 @@ public class PositiveLoginTests {
         //Push Submit button
         WebElement submitButton = mydriver.findElement(By.id("submit"));
         submitButton.click();
+
+        try{
+            Thread.sleep(2000);
+        } catch (InterruptedException e){
+            throw new RuntimeException(e);
+
+        }
 
         //Verify new page URL contains practicetestautomation.com/logged-in-successfully/
         String expectURL = "https://practicetestautomation.com/logged-in-successfully/";
