@@ -13,6 +13,7 @@ public class PositiveLoginTests {
 
         System.setProperty("webdriver.edge.driver","C://edgedriver/msedgedriver.exe");
         WebDriver mydriver = new EdgeDriver();
+//        WebDriver mydriver = new FirefoxDriver();
 
         //Open page
         mydriver.get("https://practicetestautomation.com/practice-test-login/");
