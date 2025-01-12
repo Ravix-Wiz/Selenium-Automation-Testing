@@ -1,0 +1,10 @@
+testng
+
+1.testng suites
+*configurations in xml format which allows manage and group multiple test classes
+*provides a way to execute tests in batches or specific order
+can be categorized based on functionality,models or requirement
+in selenium it enables to execute relatable tests efficiently
+parallel execution of tests
+
+
