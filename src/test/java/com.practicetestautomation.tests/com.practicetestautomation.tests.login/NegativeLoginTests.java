@@ -19,6 +19,7 @@ public class NegativeLoginTests {
 
         //Type username incorrectUser into Username field
         WebElement username = mydriver.findElement(By.id("username"));
+//        username.sendKeys("incorrectUser");
         username.sendKeys("incorrectUser");
 
         //Type password Password123 into Password field
@@ -66,6 +67,7 @@ public class NegativeLoginTests {
 
         //Type password incorrectPassword into Password field
         WebElement password = mydriver.findElement(By.id("password"));
+//        password.sendKeys("incorrectPassword");
         password.sendKeys("incorrectPassword");
 
         //Push Submit button
