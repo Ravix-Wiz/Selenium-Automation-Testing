@@ -1,3 +1,6 @@
+cmd for run tests on cmd -> mvn test clean
+
+
 testng
 
 1.testng suites
@@ -6,5 +9,7 @@ testng
 can be categorized based on functionality,models or requirement
 in selenium it enables to execute relatable tests efficiently
 parallel execution of tests
+rerun failed tests
+
 
 
