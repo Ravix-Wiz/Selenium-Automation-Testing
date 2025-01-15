@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTests {
-    @Test
+    @Test(groups = {"positive","smoke","regression"})
     public void testLoginFunctionality(){
 
         System.setProperty("webdriver.edge.driver","C://edgedriver/msedgedriver.exe");
@@ -60,7 +60,7 @@ public class LoginTests {
 
     }
 
-    @Test
+    @Test(groups = {"negative","regression"})
     public void incorrectUsernameTest(){
 
         System.setProperty("webdriver.edge.driver","C://edgedriver/msedgedriver.exe");
@@ -104,7 +104,7 @@ public class LoginTests {
 
     }
 
-    @Test
+    @Test(groups = {"negative","regression"})
     public void incorrectPasswordTest(){
 
         System.setProperty("webdriver.edge.driver","C://edgedriver/msedgedriver.exe");
